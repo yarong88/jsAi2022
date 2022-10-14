@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스 예제3</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: #ccc;
+            width: 650px;
+            height: 100px;
+            align-items: flex-start;
+/* align-items: flex-start -> align 축 방향으로 시작점 순으로 정렬 */
+            flex-wrap: wrap;            
+        }
+        .container div{
+            display: flex;
+            background-color: darkblue;
+            color: white;
+            flex: 1 1 100px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .down{
+            align-self: flex-end;
+        }
+/* 특정 요소를 align-self: flex-end -> align 축 방향으로 마지막 지점순으로 정렬 */
+    </style>
+    
+</head>
+<body>
+   <div class="container">
+       <div>flex</div>
+       <div>flex</div>
+       <div class="down">flex</div>
+       <div>flex</div>
+       <div>flex</div>
+   </div>
+    
+</body>
+</html>

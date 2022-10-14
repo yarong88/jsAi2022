@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>말줄임 기호</title>
+    <style>
+/*        범위를 잘 지정해주는 것 중요!*/
+        .notice h3{
+            width: 400px;
+/*            width: 200px; */
+            overflow: hidden;
+/*            넘치게 되면 숨겨라 */
+            white-space: nowrap;
+/*            글을 가두어라 */
+            text-overflow: ellipsis;
+/*            넘치면 말줄임표로 표현해라 */
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    <ul class="notice">
+        <li>
+            <h3>시간 배분을 위하여 현명한 판단을 바랍니다.</h3>
+        </li>
+        <li>
+            <h3>욕심껏 내용을 채우는 것도 좋겠습니다.</h3>
+        </li>
+        <li>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 그리기</title>
+</head>
+
+<body>
+    <table style="width:100" border="">
+        <tr style="background-color: azure">
+            <th>시간</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr style="background-color: cornsilk"> 아침
+            <td>한식</td>
+            <td>중식</td>
+            <td rowspan="3">양식</td>
+            <td>일식</td>
+            <td>한식</td>
+        </tr>
+        <tr style="background-color: beige"> 점심
+            <td>중식</td>
+            <td>일식</td>
+            <!--            <td>한식</td>-->
+            <td colspan="2">중식</td>
+            <!--            <td>일식</td>-->
+        </tr>
+        <tr style="background-color: aliceblue"> 저녁
+            <td>일식</td>
+            <td>한식</td>
+            <!--            <td>중식</td>-->
+            <td>양식</td>
+            <td>중식</td>
+        </tr>
+    </table>
+    <!--    table>tr>th{월}+th{화}-->
+    <!--    Ctrl + B, Ctrl + / : 주석화-->
+    <table border="">
+        <tr>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+            <th>일</th>
+        </tr>
+        <tr>
+            <td colspan="2">쌀밥</td>
+<!--            <td>쌀밥</td>-->
+            <td colspan="3">잡곡밥</td>
+<!--            <td>잡곡밥</td>-->
+<!--            <td>잡곡밥</td>-->
+            <td>스파게티</td>
+            <td>짜장면</td>
+        </tr>
+        <tr>
+            <td>불고기</td>
+            <td>떡갈비</td>
+            <td>미니돈까스</td>
+            <td>오징어볶음</td>
+            <td>제육볶음</td>
+            <td rowspan="2">피클</td>
+            <td>단무지</td>
+        </tr>
+        <tr>
+            <td>배추김치</td>
+            <td>깍두기</td>
+            <td>미소된장국</td>
+            <td>동치미</td>
+            <td>고추절임</td>
+<!--            <td>피클</td>-->
+            <td>짬뽕국물</td>
+        </tr>
+    </table>
+    <table border="">
+            <tr>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+            <tr>
+                <td>국밥</td>
+                <td>국밥</td>
+                <td rowspan="3">국</td>
+                <td>국밥</td>
+                <td>국밥</td>
+            </tr>
+            <tr>
+                <td>국밥</td>
+                <td>국밥</td>
+<!--                <td>국</td>-->
+                <td>국밥</td>
+                <td colspan="2">국밥</td>
+            </tr>
+            <tr>
+                <td>국밥</td>
+                <td>국밥</td>
+<!--                <td>국</td>-->
+                <td>국밥</td>
+<!--                <td>국밥</td>-->
+            </tr>
+    </table>
+</body></html>

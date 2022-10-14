@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>조부모, 부모, 자식 관계일 때</title>
+    <style>
+        .grandparent{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }        
+        .parent{
+            background-color: blueviolet;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+/* absolute : 요소의 기본값 기준이 아닌 요소의 가장 가까운 조상(부모)의 위치를 기준으로 잡은 상대적인 위치*/
+            top: 20px;
+        }
+        .child{
+            background-color: chartreuse;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+   <h3>조부모, 부모, 자식 관계일 때
+       <div class="grandparent">
+           <div class="parent">
+               <div class="child"></div>
+           </div>
+       </div>
+   </h3>
+    
+</body>
+</html>

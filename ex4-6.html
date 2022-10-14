@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>위치지정</title>
+    <style>
+        body{
+            height: 1000vh;
+/*            display: flex;*/
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            position: static;
+/* 요소의 포지션을 기본값으로 설정 */
+        }
+        #second{
+            background-color: aquamarine;
+            position: fixed;
+/* 요소의 포지션을 fixed로 설정, fixed = 지금 보는 화면에 고정된 위치를 가짐 -> 스크롤을 내려도, 즉 웹사이트 화면을 이동시켜도 화면 상의 그 위치에 고정되어 있다. */
+        }
+    
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id="second"></div>
+</body>
+</html>

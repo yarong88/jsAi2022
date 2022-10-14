@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID 선택자</title>
+    <style>
+        body{
+            background-color: yellow
+        }
+        .d1{
+            background-color: aqua
+        }
+        #d2{
+            background-color: azure
+        }
+/*        선택자 우선순위 (낮음) 전체->타입->클래스->아이디 (높음)*/
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <div>이곳은 첫번째 줄입니다.</div>
+        <div>이곳은 두번째 줄입니다.</div>
+        <div id="d2">이곳은 세번째 줄입니다.</div>
+        <div>이곳은 네번째 줄입니다.</div>
+        <div>이곳은 다섯번째 줄입니다.</div>
+    </div>
+</body></html>

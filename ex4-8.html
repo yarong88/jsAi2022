@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스 예제2</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: #ccc;
+            width: 650px;
+            height: 350px;
+            flex-wrap: wrap;
+/* wrap : 정해놓은 범위 안에 억지로 가두어 둠 => 첫번째 요소 (child1)부터 제 크기 적용 */
+/* wrap-reverse 배치를 뒤부터 적용 => 마지막 요소(child8)부터 제 크기 적용 */
+        }
+        .container div{
+            display: flex;
+            background-color: antiquewhite;
+            flex: 1 1 150px;
+            margin: 10px;
+            font-size: 20px;
+/* div의 크기는 150+마진*2 -> 마진의 크기를 포함한다. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+        <div>child4</div>
+        <div>child5</div>
+        <div>child6</div>
+        <div>child7</div>
+        <div>child8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습</title>
+    <style>
+        div{
+            display: flex;
+            background-color: lightgray;
+            width: 300px;
+            height: 25px;
+            margin: 5px;
+            padding: 10px;
+            align-items: center;
+            font: 20px times;
+/*          text-indent: 앞에 띄우기 */
+/*          text-decoration: none 링크 밑줄 없애기 */
+        }
+        .mm1{            
+            transition: transform 500ms ease-in-out ;
+        }
+        .mm2{            
+            transition: transform 500ms ease-in-out ;
+        }
+        .mm3{            
+            transition: transform 500ms ease-in-out ;
+        }
+        .mm4{            
+            transition: transform 500ms ease-in-out ;
+        }
+        .mm5{            
+            transition: width 500ms ease-in-out ;
+/*          transform 말고 다른 것도 넣을 수 있다는 걸 기억하기  */
+/*          transition: 시간 -> 잘 모르겠을 땐 시간만 넣어도 됨 */
+        }
+        .mm1:hover{
+            transform: scaleX(1.4) translateX(45px);
+            color: red;
+            background-color: gainsboro;    
+        }
+        
+        .mm2:hover{
+            transform: scaleX(1.4) translateX(45px);
+            color: blue;
+            background-color: gainsboro;    
+        }
+        .mm3:hover{
+            transform: scaleX(1.4) translateX(45px);
+            color: blueviolet;
+            background-color: gainsboro;    
+        }
+        .mm4:hover{
+            transform: scaleX(1.4) translateX(45px);
+            color: darkorange;
+            background-color: gainsboro;    
+        }
+/*
+        .mm5:hover{
+            transform: scaleX(1.4) translateX(45px);
+            color: hotpink;
+            background-color: gainsboro;    
+        }
+*/
+        .mm5:hover{
+            width: 400px;
+            color: hotpink;
+            background-color: gainsboro;    
+        }
+    </style>
+</head>
+<body>
+   <h3>Moving menu</h3>
+   <div class="mm1">Company</div>
+   <div class="mm2">Product</div>
+   <div class="mm3">Service</div>
+   <div class="mm4">Customer Support</div>
+   <div class="mm5">Community</div>    
+</body>
+</html>

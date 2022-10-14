@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공 튕기기</title>
+    <style>
+        div{
+            background-color: crimson;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            animation: myball 700ms infinite alternate ease-in;
+            transition: 100ms;
+        }
+        @keyframes myball{
+            0%{
+                transform: translate(200px, 100px);
+            }
+            90%{
+                transform: translate(200px, 380px);
+            }
+            100%{
+                transform: translate(200px, 400px) 
+                           scale(1.2, 0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

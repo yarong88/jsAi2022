@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>하위 선택자</title>
+    <style>
+        body{
+            margin: 30px
+        }
+        .abox>p{
+            color: red;
+        }
+/*        ">" 바로 밑 하위에만 적용(그이상의 하위에는 작용 안됨)*/
+        ul{
+            list-style: square;
+        }
+    </style>
+</head>
+<body>
+   <div class="abox">
+       <p>11월의 여행지</p>
+       <p>12월의 여행지</p>
+       <ul>
+           <li>
+               <p>1주차 여행지</p>
+           </li>
+           <li>
+               <p>2주차 여행지</p>
+           </li>
+       </ul>
+       <p>1월의 여행지</p>       
+   </div>
+    
+</body>
+</html>

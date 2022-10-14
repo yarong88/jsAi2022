@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>형제 관계일 때 : 동등한 요소</title>
+    <style>
+        .up{
+            background-color: indigo;
+            width: 100px;
+            height: 100px;    
+/* 기본적으로 position: static 값을 가진다. 기본값이므로 */
+        }
+        .down{
+            background-color: deeppink;
+            width: 100px;
+            height: 100px;
+            position: relative;
+/* relative -> 기본값(static) 기준 상대적인 위치 -> 요소가 가지고 있던 위치(기본값)에서 상대적으로 어느 위치로 이동시킬 것인가 설정. */
+            top: 20px;
+        }
+    
+    </style>
+</head>
+<body>
+   <h3>형제 관계일 때</h3>
+    <div class="up"></div>
+    <div class="down"></div>
+</body>
+</html>

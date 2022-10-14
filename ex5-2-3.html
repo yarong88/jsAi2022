@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5-2 연습2 (7번째 항목만 제외)</title>
+    <style>
+        p:not(:nth-child(7)){
+/*            ":not()" 괄호 안을 제외한 모든 p */
+            background-color: aliceblue;
+        }
+        p:nth-child(7):hover{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <p>1번째 항목</p>
+       <p>2번째 항목</p>
+       <p>3번째 항목</p>
+       <p>4번째 항목</p>
+       <p>5번째 항목</p>
+       <p>6번째 항목</p>
+       <p>7번째 항목</p>
+       <p>8번째 항목</p>
+       <p>9번째 항목</p>
+       <p>10번째 항목</p>
+   </div>    
+</body>
+</html>

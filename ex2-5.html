@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>입력양식 만들기</title>
+</head>
+<body>
+    <form action="#">
+        <h3>가입양식</h3>
+        <label for="name">성함</label>
+        <input type="text" pattern="[가-힣]{2}|[가-힣]{3}|[가-힣]{4}" id="name">
+        <br>
+        <label for="phonenum">전화번호</label>
+        <input type="tel" pattern="[0-9]{11}" id="phonenum">
+        <br>
+        <label for="adress">주소</label>
+        <input type="text" id="adress">
+        <br>
+        하고 싶은 말
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="date">제출 날짜</label>
+        <input type="date" id="date">
+        <br>
+        이메일주소
+        <input type="text" pattern="[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

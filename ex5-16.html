@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공 튕기기</title>
+    <style>
+        .ball{
+            background-color: pink;
+            width: 50px;
+            height: 50px;
+            border: 10px dotted red;
+            border-radius: 75px;
+            transition: 100ms;
+            font: 38px times;
+            text-align: center;
+        }
+        input:checked+.ball{            
+            animation: myball 2500ms infinite ease-in;
+        }
+        @keyframes myball{
+            0%{
+                transform: translate(50px, 0px);
+            }
+            50%{
+                transform: translate(53px, 250px);
+            }
+            90%{
+                transform: translate(351px, 472px)
+                    rotate(360deg);
+            }
+            100%{
+                transform: translate(440px, 472px)
+                    rotate(430deg);
+            }
+        }
+        img{
+            transform: translate(-334px,39px) scaleX(1.25);
+         
+        }
+        .triangle{
+/*            삼각형 */
+            width: 0;
+            height: 0;
+            border-bottom: 140px solid skyblue;
+            border-top: 140px solid transparent;
+            border-left: 190px solid skyblue;
+            border-right: 190px solid transparent;
+            transform: translate(0px,195px);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div class="ball">공</div>
+    <div class="triangle"></div>
+    <img src="img/runway2.png" alt="경사로">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자 3</title>
+</head>
+<!-- p:nth-cild() 와 p:nth-of-type() 의 차이-->
+    <style>
+        p:nth-child(3){
+            background-color: yellow;
+        }
+/*        p를 가지는 부모의 3번째 자손이며 p이어야 한다. */
+        p:nth-child(4){
+            background-color: aqua;
+        }
+/*        p를 가지는 부모의 4번째 자손이며 p이어야 한다. 
+        4번째는 맞으나 p가 아니므로 적용 X */
+        p:nth-of-type(3){
+            background-color: coral;
+        }
+/*        p를 가지는 부모의 3번째 자손 p
+        자손 p들중 3번째 */
+    </style>
+<body>
+    <div>
+        <div>1번째 문장입니다. 그리고 div입니다.</div>
+        <p>2번째 문장입니다. 그리고 p입니다.</p>
+        <p>3번째 문장입니다. 그리고 p입니다.</p>
+        <div>4번째 문장입니다. 그리고 div입니다.</div>
+        <p>5번째 문장입니다. 그리고 p입니다.</p>
+        <p>6번째 문장입니다. 그리고 p입니다.</p>
+    </div>
+</body></html>

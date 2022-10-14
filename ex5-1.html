@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First-Child 구조적 가상 클래스 + last-child</title>
+    <style>
+        p:first-child{
+/*       자손 p:첫번째 
+         =p를 가지는 모든 부모의 첫번째 자손 */
+            color: red;
+            background-color: beige;
+            padding: 5px;
+        }
+       span p:first-child{
+/*       자손 p:첫번째
+         =p를 가지는 부모 중 특정 부모의 첫번째 자손 */
+            color: blue;
+            background-color: beige;
+            padding: 5px;
+        }
+        p:last-child{
+/*       자손 p:마지막
+         =p를 가지는 모든 부모의 마지막 자손 */
+            color: coral;
+            background-color: antiquewhite;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <p>:first-child입니다.</p>
+       <p>:first-child가 아닙니다.</p>
+       <p>:last-child입니다.</p>
+   </div>
+   <div>
+       <h2>p 태그가 아니라 선택되지 않습니다.</h2>
+<!--       말 그대로 같은 부모라도 자손이 다르므로 적용X-->
+   </div>
+ <span>
+       <p>:first-child입니다.</p>
+       <p>:first-child가 아닙니다.</p>    
+       <p>:last-child입니다.</p>    
+ </span>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>복합선택자</title>
+    <!--    선택자를 2개 이상 선택하는 경우-->
+    <style>
+        /*        div p{} : div 안에 있는 p들을 선택*/
+        div p {
+            background-color: antiquewhite
+        }
+
+        /*        div .c1{} : div 안에 있는 c1을 선택*/
+        div .c1, #p1 {
+            background-color: aliceblue
+        }
+/*        "," 쉼표를 사용하면 OR*/
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <div>
+        <p>child 1</p>
+        <p>child 2</p>
+        <div>
+            <p class="c1">grandchild</p>
+        </div>
+    </div>
+    <p id="p1">neighborhood child</p>
+</body></html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>조부모, 부모, 자식 관계일 때 : 요소 안에 요소</title>
+    <style>
+        .grandparent{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }        
+        .parent{
+            background-color: blueviolet;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            top: -20px;
+            opacity: 0.5;
+        }
+        .child{
+            background-color: chartreuse;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -20px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+   <h3>조부모, 부모, 자식 관계일 때
+       <div class="grandparent">
+           <div class="parent">
+               <div class="child"></div>
+           </div>
+       </div>
+   </h3>
+    
+</body>
+</html>

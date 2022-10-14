@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>하위 선택자</title>
+    <style>
+        .abox p{
+            color: blue;
+        }
+        #next{
+            background-color: beige;
+        }
+        ul{
+            list-style: square;
+        }
+    </style>
+</head>
+<body>
+<!--   div.명칭 + 탭 = <div class="명칭"></div>-->
+   <div class="abox">
+       <p>11월의 여행지</p>
+       <p>12월의 여행지</p>
+       <ul>
+           <li>
+               <p>1주차 여행지</p>
+           </li>
+           <li>
+               <p>2주차 여행지</p>
+           </li>
+       </ul>
+       
+   </div>
+   <p id="next">내년 여행지</p>
+    
+</body>
+</html>

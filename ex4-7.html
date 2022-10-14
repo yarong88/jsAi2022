@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스 예제1</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+/* container 안의 요소들을 align 축 (세로) 방향의 가운데로 정렬 */
+/*            justify-content: center;*/
+/* container 안의 요소들을 justify 축 (가로) 방향의 가운데로 정렬   */
+            background-color: #ccc;
+        }
+        .container>div{
+            background-color: #4f9cd3;
+            margin: 10px;
+            font-size: 20px;
+            color: #fff
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div>child1</div>
+    <div><h1>child2</h1></div>
+    <div>child3</div>
+    </div>
+</body>
+</html>
