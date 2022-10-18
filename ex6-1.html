@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 레이아웃 만들기</title>
+    <style>
+/*      container, header, main, nav, article, footer 태그*/
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            width: 600px;
+            height: 100px;
+            margin: 10px;
+            background-color: saddlebrown;
+            border-radius: 10px;
+        }
+        main{
+            display: flex;
+            justify-content:space-evenly;
+        }
+        nav{
+            width: 115px;
+            height: 500px;
+            margin: 10px;
+            border-radius: 10px
+        }
+        .nav1{
+            background-color: firebrick;            
+        }
+        .nav2{
+            background-color: red;            
+        }
+        article{            
+            display: flex;
+            flex-direction: column;
+        }
+        article div{
+            width: 330px;
+            height: 240px;
+            margin: 10px;
+            border-radius: 10px;            
+        }
+        .article1{
+            background-color: yellowgreen;            
+        }
+        .article2{
+            background-color: green;            
+        }
+        footer{
+            width: 600px;
+            height: 100px;
+            margin: 10px;
+            background-color: sandybrown;
+            border-radius: 10px;            
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <nav class="nav1"></nav>
+        <article>
+            <div class="article1"></div>
+            <div class="article2"></div>
+        </article>                
+        <nav class="nav2"></nav>
+    </main>
+    <footer></footer>        
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 600px;
+            height: 50px;
+            background-color: orange;
+            color: white;
+            text-indent: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            width: 600px;
+            height: 30px;
+            background-color: gray;
+        }
+
+        .nav1 {
+            width: 100px;
+            background-color: aliceblue;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-indent: 10px;
+        }
+        .nav1 a:hover{
+            color: red;
+        }
+
+        .nav2 {
+            width: 200px;
+            background-color: azure;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-indent: 10px;
+            white-space: pre-wrap;            
+        }
+        .nav2 h4{
+            padding: 10px;
+            text-indent: 0px;
+        }
+        .nav2 a:hover{
+            color: blue;
+        }
+
+        .art1 {
+            width: 300px;
+            height: 200px;
+            background-color: #afe8c5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-indent: 10px;
+        }
+        .art1 a:hover{
+            color: yellow;
+        }
+
+        .art2 {
+            width: 300px;
+            height: 200px;
+            background-color: #8ddcd7;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-indent: 10px;
+        }
+        .art2 a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Musee d'Orsay
+    </header>
+    <main>
+        <nav class="nav1">
+            <h4>ARTIST</h4>
+            <a href="#">작가의 작품</a>
+            <a href="#">작가의 시대</a>
+            <a href="#">작가의 일생</a>
+        </nav>
+        <article>
+            <div class="art1">
+                <a href="#">피리부는 소년</a>
+                <a href="#">고흐의 밤</a>
+                <a href="#">황색 그리스도가 있는 화가의 자화상</a>
+                <a href="#">오페라좌의 관현악단</a>
+                <a href="#">만종</a>
+                <a href="#">제비꽆 장식을 단 베르트모리조</a>
+            </div>
+            <div class="art2">
+                <a href="#">피리부는 소년</a>
+                <a href="#">고흐의 밤</a>
+                <a href="#">황색 그리스도가 있는 화가의 자화상</a>
+                <a href="#">오페라좌의 관현악단</a>
+                <a href="#">만종</a>
+                <a href="#">제비꽆 장식을 단 베르트모리조</a>
+            </div>
+        </article>
+        <nav class="nav2">
+            <h4>전세계인들에게 제일 사랑받는 서양 미술사의 시대</h4>
+           <a href="#">Workshop. Go</a>
+           <a href="#">Summer Exhibition</a>
+           <a href="#">RA Collection</a>
+        </nav>
+    </main>
+    <footer>
+        C.2018 Les Amis du Musee d'Orsay. All rights reserved.
+    </footer>
+</body></html>
