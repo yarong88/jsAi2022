@@ -6,6 +6,7 @@
 @import "./reset.css";
 @import "./variable.css";
 @import "./navigation-bar.css";
+@import "./media-query.css";
 
 
 /* Rules for sizing the icon. */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+    <link rel="stylesheet" href="./css/mypage.css">
+</head>
+<body>
+    <!-- div>div.user-component>img.user-component__profile+div.user-component__id{양동원}^div.user-component>div.user-component__profile>span{+}+div.user-component__id{새 프로필} -->
+    <div class="display-flex-center">
+        <div class="user-component position-relative display-flex-center">
+            <img src="./img/me.jpg" alt="" class="user-component__profile">
+            <div class="user-component__id">양동원</div>
+        </div>
+        <div class="user-component">
+            <div class="user-component__profile add-profile-btn display-flex-center">
+                <span>+</span>
+            </div>
+            <div class="user-componet__id">새 프로필</div>
+        </div>
+    </div>
+    <div class="continue-watching">
+        <p class="continue-watching__header">이어보기</p>
+        <ul class="continue-watching__imges">
+            <li>
+                <div class="continue-watching__card">
+                    <img src="./img/ani01.jpg">
+                    <span class="continue-watching__title">센과 치히로의 행방불명</span>
+                </div>
+            </li>
+            <li>
+                <div class="continue-watching__card">
+                    <img src="./img/ani02.jpg">
+                    <span class="continue-watching__title">마루 밑 아리에티</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wishlist">
+        <p class="wishlist__header">내가 찜한 목록</p>
+        <div class="wishlist-container">
+            <div class="wishlist-item">
+                <div>
+                    <img src="./img/wishlist01.png" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">도깨비</span>
+                    <span class="wishlist__subtitle">김고은, 공유 출연</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-icons">play_arrow</span>
+                </div>
+            </div>
+            <div class="wishlist-item">
+                <div>
+                    <img src="./img/wishlist02.jpg" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">오만과 편견</span>
+                    <span class="wishlist__subtitle">황상준 출연</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-icons">play_arrow</span>
+                </div>            
+            </div>
+            <div class="wishlist-item">    
+                <div>
+                    <img src="./img/wishlist03.jpg" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">편의점 샛별이</span>
+                    <span class="wishlist__subtitle">김유정, 지창욱 출연</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-icons">play_arrow</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-bar">
+        <a href="./ex8-3.html">
+            <span class="material-icons-outlined">search</span>
+        </a>
+        <a href="./ex8-3_mypage.html">
+            <span class="material-icons">person</span>
+        </a>
+    </div>
+</body>
+</html>

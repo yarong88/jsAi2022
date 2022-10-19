@@ -1,5 +1,15 @@
 @import "./global.css";
 
+@media (max-width: 1280px) {
+    body{background-color: darkgray;}
+}
+@media (max-width: 960px) {
+    body{background-color: plum;}
+}
+@media (max-width: 640px) {
+    body{background-color: var(--darkpurple);}
+}
+
 .find-search-bar-form{
     padding: 0 25px;
 }
